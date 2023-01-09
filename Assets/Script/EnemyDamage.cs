@@ -13,7 +13,11 @@ public class EnemyDamage : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             playerMovement.knockbackTimer = playerMovement.knockbackDuration;
+<<<<<<< Updated upstream
             if(collision.transform.position.x < transform.position.x)
+=======
+            if(collision.transform.position.x <= transform.position.x)
+>>>>>>> Stashed changes
                 playerMovement.knockedFromRight = true;
             else
                 playerMovement.knockedFromRight = false;

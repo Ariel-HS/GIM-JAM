@@ -12,7 +12,11 @@ public class PlayerDamage : MonoBehaviour
         {
             collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
         }
+<<<<<<< Updated upstream
         else if(collision.collider.gameObject.tag == "WeakPoint") 
+=======
+        else if(collision.collider.gameObject.transform.tag == "WeakPoint")
+>>>>>>> Stashed changes
         {
             collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage*2);
         }

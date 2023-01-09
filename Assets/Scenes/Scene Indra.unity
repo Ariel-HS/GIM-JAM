@@ -2064,7 +2064,11 @@ Transform:
   m_LocalPosition: {x: -7, y: 2.18, z: -10}
 =======
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -2.0433168, y: 7.1725445, z: -9.874765}
+>>>>>>> Stashed changes
+=======
+  m_LocalPosition: {x: -1.8733549, y: 7.1725945, z: -9.874765}
 >>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -3083,6 +3087,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1294208840265458892, guid: 2027d456390955a4c83c4954a49b7924, type: 3}
   m_PrefabInstance: {fileID: 128054034}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1294514841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1294514842}
+  - component: {fileID: 1294514844}
+  - component: {fileID: 1294514843}
+  m_Layer: 0
+  m_Name: WeakPointHitBox
+  m_TagString: WeakPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1294514842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294514841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.01, y: 0.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1663451506577344145}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1294514843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294514841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be08fe00ab40384fb98c8d4adac227b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  playerHealth: {fileID: 5682608709746668690}
+  playerMovement: {fileID: 5682608709746668717}
+--- !u!70 &1294514844
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294514841}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04, y: 0.17}
+  m_Size: {x: 0.62, y: 0.34}
+  m_Direction: 1
 --- !u!1 &1350521107
 GameObject:
   m_ObjectHideFlags: 0
@@ -18464,6 +18532,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2015076160}
     m_Modifications:
+    - target: {fileID: 198286287, guid: 1b76f401e93b0b34bb3de054149fc0d3, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 198286290, guid: 1b76f401e93b0b34bb3de054149fc0d3, type: 3}
       propertyPath: playerHealth
       value: 
@@ -18471,6 +18543,7 @@ PrefabInstance:
     - target: {fileID: 198286290, guid: 1b76f401e93b0b34bb3de054149fc0d3, type: 3}
       propertyPath: playerMovement
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 5682608709746668715}
     - target: {fileID: 1797381726, guid: 1b76f401e93b0b34bb3de054149fc0d3, type: 3}
       propertyPath: m_TagString
@@ -18488,13 +18561,20 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0.03
       objectReference: {fileID: 0}
+=======
+      objectReference: {fileID: 5682608709746668717}
+>>>>>>> Stashed changes
     - target: {fileID: 1663451505475258609, guid: 1b76f401e93b0b34bb3de054149fc0d3, type: 3}
       propertyPath: m_Name
       value: 'Enemy '
       objectReference: {fileID: 0}
     - target: {fileID: 1663451505475258609, guid: 1b76f401e93b0b34bb3de054149fc0d3, type: 3}
       propertyPath: m_TagString
+<<<<<<< Updated upstream
       value: Enemy
+=======
+      value: Untagged
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 1663451505475258612, guid: 1b76f401e93b0b34bb3de054149fc0d3, type: 3}
       propertyPath: m_RootOrder
@@ -18554,7 +18634,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b76f401e93b0b34bb3de054149fc0d3, type: 3}
+<<<<<<< Updated upstream
 --- !u!4 &1663451506577344166 stripped
+=======
+--- !u!4 &1663451506577344145 stripped
+>>>>>>> Stashed changes
 Transform:
   m_CorrespondingSourceObject: {fileID: 1663451505475258612, guid: 1b76f401e93b0b34bb3de054149fc0d3, type: 3}
   m_PrefabInstance: {fileID: 1663451506577344144}
@@ -18681,7 +18765,11 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5682608710058537332, guid: 11a07514774dc4b4c8fd1198f37e4294, type: 3}
   m_PrefabInstance: {fileID: 5682608709746668671}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!114 &5682608709746668715 stripped
+=======
+--- !u!114 &5682608709746668717 stripped
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9157550889636951090, guid: 11a07514774dc4b4c8fd1198f37e4294, type: 3}
   m_PrefabInstance: {fileID: 5682608709746668671}
@@ -18692,6 +18780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c498052d40cf67544beca79772163b9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   damage: 10
 --- !u!61 &5682608709746668707
@@ -18720,5 +18809,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.875}
   m_EdgeRadius: 0
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

@@ -17,7 +17,11 @@ public class PlayerMovement : MonoBehaviour
 
     public float knockbackVelocity = 5f;
     public float knockbackTimer;
+<<<<<<< Updated upstream
     public float knockbackDuration;
+=======
+    public float knockbackDuration = .2f;
+>>>>>>> Stashed changes
     public bool knockedFromRight;
 
     void Awake()
@@ -53,20 +57,34 @@ public class PlayerMovement : MonoBehaviour
     {
         if(knockbackTimer <= 0)
         {
+<<<<<<< Updated upstream
             Vector2 playerVelocity = new Vector2(moveInput.x*runSpeed, myRigidbody.velocity.y);
+=======
+            Vector2 playerVelocity = new Vector2 (moveInput.x*runSpeed, myRigidbody.velocity.y);
+>>>>>>> Stashed changes
             myRigidbody.velocity = playerVelocity; 
         }
         else
         {
             if(knockedFromRight)
+<<<<<<< Updated upstream
             {  
                 Vector2 playerVelocity = new Vector2(-knockbackVelocity, knockbackVelocity);
+=======
+            {
+                Vector2 playerVelocity = new Vector2 (-knockbackVelocity, knockbackVelocity);
+>>>>>>> Stashed changes
                 myRigidbody.velocity = playerVelocity; 
             }
             else
             {
+<<<<<<< Updated upstream
                 Vector2 playerVelocity = new Vector2(knockbackVelocity, knockbackVelocity);
                 myRigidbody.velocity = playerVelocity; 
+=======
+                Vector2 playerVelocity = new Vector2 (knockbackVelocity, knockbackVelocity);
+                myRigidbody.velocity = playerVelocity;                 
+>>>>>>> Stashed changes
             }
 
             knockbackTimer -= Time.deltaTime;
