@@ -13,9 +13,19 @@ public class ItemCollector : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Coins"))
         {
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
             coins++;
             coinsText.text = "Coins: " + coins;
         }
+    }
+
+    public int GetCoin()
+    {
+        return coins;
+    }
+
+    public void ResetCoin()
+    {
+        coins = 0;
     }
 }
