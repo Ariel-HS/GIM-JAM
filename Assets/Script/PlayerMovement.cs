@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput; 
     Vector2 jumpInput;
     Rigidbody2D myRigidbody;
-    CapsuleCollider2D capsuleCollider;
+    BoxCollider2D boxCollider;
     Animator anim;
 
     [SerializeField] float runSpeed = 10f;
@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
-        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
     }
 
@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded()/// cek apakah di bawah ada ground/platform
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(capsuleCollider.bounds.center, capsuleCollider.bounds.size, 0, Vector2.down, 0.01f, platformLayer);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.01f, platformLayer);
         return raycastHit.collider != null;
     }
 }

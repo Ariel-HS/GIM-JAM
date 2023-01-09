@@ -12,5 +12,9 @@ public class PlayerDamage : MonoBehaviour
         {
             collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
         }
+        else if(collision.gameObject.tag == "WeakPoint")
+        {
+            collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage*2);
+        }
     }
 }
